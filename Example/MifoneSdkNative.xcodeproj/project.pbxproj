@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520664152BABE06200F7D8C9 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520664142BABE06200F7D8C9 /* CallManager.swift */; };
+		520664172BAC13A100F7D8C9 /* IncomingCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520664162BAC13A100F7D8C9 /* IncomingCallViewController.swift */; };
+		52E103062BA2E61600C2D70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102EF2BA2E61500C2D70F /* AppDelegate.swift */; };
+		52E103072BA2E61600C2D70F /* VoIPGRIDLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102F12BA2E61500C2D70F /* VoIPGRIDLogin.swift */; };
+		52E103082BA2E61600C2D70F /* VoIPGRIDMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102F22BA2E61500C2D70F /* VoIPGRIDMiddleware.swift */; };
+		52E103092BA2E61600C2D70F /* MicPermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102F42BA2E61500C2D70F /* MicPermissionHelper.swift */; };
+		52E1030A2BA2E61600C2D70F /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52E102F52BA2E61600C2D70F /* ringback.wav */; };
+		52E1030B2BA2E61600C2D70F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E102F72BA2E61600C2D70F /* Config.plist */; };
+		52E1030C2BA2E61600C2D70F /* StagingConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E102F82BA2E61600C2D70F /* StagingConfig.plist */; };
+		52E1030D2BA2E61600C2D70F /* UrlsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102F92BA2E61600C2D70F /* UrlsConfiguration.swift */; };
+		52E1030F2BA2E61600C2D70F /* InCallDialpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E102FE2BA2E61600C2D70F /* InCallDialpadViewController.swift */; };
+		52E103112BA2E61600C2D70F /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E103002BA2E61600C2D70F /* CallViewController.swift */; };
+		52E103142BA2E61600C2D70F /* DialerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E103042BA2E61600C2D70F /* DialerViewController.swift */; };
+		52E103152BA2E61600C2D70F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E103052BA2E61600C2D70F /* SettingsViewController.swift */; };
+		52E103172BA2EBD600C2D70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E102FF2BA2E61600C2D70F /* Assets.xcassets */; };
+		52E103182BA2EBD600C2D70F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E103012BA2E61600C2D70F /* LaunchScreen.storyboard */; };
+		52E103192BA2EBD600C2D70F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E103032BA2E61600C2D70F /* Main.storyboard */; };
+		B1D9B33122853CB5D4D31B3C /* Pods_MifoneSdkNative_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A9709ADD2D1D31DF71D354 /* Pods_MifoneSdkNative_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0411CCA5F50255B9E8DDB847 /* Pods-MifoneSdkNative_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MifoneSdkNative_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MifoneSdkNative_Tests/Pods-MifoneSdkNative_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3338ABA13EAC7D611CF4F310 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		520664142BABE06200F7D8C9 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		520664162BAC13A100F7D8C9 /* IncomingCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingCallViewController.swift; sourceTree = "<group>"; };
+		5206C59C2B986F440068BBB6 /* MifoneSdkNative_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MifoneSdkNative_Example.entitlements; sourceTree = "<group>"; };
+		52E102EE2BA2E61400C2D70F /* MifoneSdkNative_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MifoneSdkNative_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		52E102EF2BA2E61500C2D70F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52E102F12BA2E61500C2D70F /* VoIPGRIDLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoIPGRIDLogin.swift; sourceTree = "<group>"; };
+		52E102F22BA2E61500C2D70F /* VoIPGRIDMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoIPGRIDMiddleware.swift; sourceTree = "<group>"; };
+		52E102F42BA2E61500C2D70F /* MicPermissionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicPermissionHelper.swift; sourceTree = "<group>"; };
+		52E102F52BA2E61600C2D70F /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringback.wav; sourceTree = "<group>"; };
+		52E102F72BA2E61600C2D70F /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		52E102F82BA2E61600C2D70F /* StagingConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StagingConfig.plist; sourceTree = "<group>"; };
+		52E102F92BA2E61600C2D70F /* UrlsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlsConfiguration.swift; sourceTree = "<group>"; };
+		52E102FC2BA2E61600C2D70F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E102FE2BA2E61600C2D70F /* InCallDialpadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InCallDialpadViewController.swift; sourceTree = "<group>"; };
+		52E102FF2BA2E61600C2D70F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E103002BA2E61600C2D70F /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		52E103022BA2E61600C2D70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E103032BA2E61600C2D70F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		52E103042BA2E61600C2D70F /* DialerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialerViewController.swift; sourceTree = "<group>"; };
+		52E103052BA2E61600C2D70F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5CA59E9AA9317C04AC18DFFA /* Pods-MifoneSdkNative_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MifoneSdkNative_Tests.release.xcconfig"; path = "Target Support Files/Pods-MifoneSdkNative_Tests/Pods-MifoneSdkNative_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* MifoneSdkNative_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MifoneSdkNative_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		65F6C85891FAB879D729C371 /* MifoneSdkNative.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MifoneSdkNative.podspec; path = ../MifoneSdkNative.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6708D4C822645027B8127B23 /* Pods-MifoneSdkNative_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MifoneSdkNative_Example.release.xcconfig"; path = "Target Support Files/Pods-MifoneSdkNative_Example/Pods-MifoneSdkNative_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3A9709ADD2D1D31DF71D354 /* Pods_MifoneSdkNative_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MifoneSdkNative_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC80744813ECA1840EB1729 /* Pods_MifoneSdkNative_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MifoneSdkNative_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4104CA607DCC34A7319C22E /* Pods-MifoneSdkNative_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MifoneSdkNative_Example.debug.xcconfig"; path = "Target Support Files/Pods-MifoneSdkNative_Example/Pods-MifoneSdkNative_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E604B68B589909B4FEA894 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D9B33122853CB5D4D31B3C /* Pods_MifoneSdkNative_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0079E2A9C881AA71D5610468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9709ADD2D1D31DF71D354 /* Pods_MifoneSdkNative_Example.framework */,
+				BDC80744813ECA1840EB1729 /* Pods_MifoneSdkNative_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EAAF68A86D5212D96FD69D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4104CA607DCC34A7319C22E /* Pods-MifoneSdkNative_Example.debug.xcconfig */,
+				6708D4C822645027B8127B23 /* Pods-MifoneSdkNative_Example.release.xcconfig */,
+				0411CCA5F50255B9E8DDB847 /* Pods-MifoneSdkNative_Tests.debug.xcconfig */,
+				5CA59E9AA9317C04AC18DFFA /* Pods-MifoneSdkNative_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52E102F02BA2E61500C2D70F /* VoIPGRID */ = {
+			isa = PBXGroup;
+			children = (
+				52E102F12BA2E61500C2D70F /* VoIPGRIDLogin.swift */,
+				52E102F22BA2E61500C2D70F /* VoIPGRIDMiddleware.swift */,
+			);
+			path = VoIPGRID;
+			sourceTree = "<group>";
+		};
+		52E102F32BA2E61500C2D70F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52E102F42BA2E61500C2D70F /* MicPermissionHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52E102F62BA2E61600C2D70F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				52E102F72BA2E61600C2D70F /* Config.plist */,
+				52E102F82BA2E61600C2D70F /* StagingConfig.plist */,
+				52E102F92BA2E61600C2D70F /* UrlsConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		52E102FA2BA2E61600C2D70F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E102FC2BA2E61600C2D70F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52E102FD2BA2E61600C2D70F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				520664162BAC13A100F7D8C9 /* IncomingCallViewController.swift */,
+				52E102FE2BA2E61600C2D70F /* InCallDialpadViewController.swift */,
+				52E102FF2BA2E61600C2D70F /* Assets.xcassets */,
+				52E103002BA2E61600C2D70F /* CallViewController.swift */,
+				52E103012BA2E61600C2D70F /* LaunchScreen.storyboard */,
+				52E103032BA2E61600C2D70F /* Main.storyboard */,
+				52E103042BA2E61600C2D70F /* DialerViewController.swift */,
+				52E103052BA2E61600C2D70F /* SettingsViewController.swift */,
+			);
+			name = UI;
+			path = "../../../iOS-Phone-Lib-main/Phone Lib Example/UI";
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				5206C59C2B986F440068BBB6 /* MifoneSdkNative_Example.entitlements */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for MifoneSdkNative */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				0EAAF68A86D5212D96FD69D8 /* Pods */,
+				0079E2A9C881AA71D5610468 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* MifoneSdkNative_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for MifoneSdkNative */ = {
+			isa = PBXGroup;
+			children = (
+				52E102EF2BA2E61500C2D70F /* AppDelegate.swift */,
+				52E102F62BA2E61600C2D70F /* Configuration */,
+				52E102F32BA2E61500C2D70F /* Helpers */,
+				52E102F52BA2E61600C2D70F /* ringback.wav */,
+				52E102FA2BA2E61600C2D70F /* Supporting Files */,
+				52E102FD2BA2E61600C2D70F /* UI */,
+				52E102F02BA2E61500C2D70F /* VoIPGRID */,
+				52E102EE2BA2E61400C2D70F /* MifoneSdkNative_Example-Bridging-Header.h */,
+				520664142BABE06200F7D8C9 /* CallManager.swift */,
+			);
+			name = "Example for MifoneSdkNative";
+			path = MifoneSdkNative;
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				65F6C85891FAB879D729C371 /* MifoneSdkNative.podspec */,
+				3338ABA13EAC7D611CF4F310 /* README.md */,
+				D5E604B68B589909B4FEA894 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* MifoneSdkNative_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MifoneSdkNative_Example" */;
+			buildPhases = (
+				F483C61B087DFBD15CE44638 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				778EC09D5C4434F888A57720 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MifoneSdkNative_Example;
+			productName = MifoneSdkNative;
+			productReference = 607FACD01AFB9204008FA782 /* MifoneSdkNative_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 5N23RF783F;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MifoneSdkNative" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* MifoneSdkNative_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E103172BA2EBD600C2D70F /* Assets.xcassets in Resources */,
+				52E103182BA2EBD600C2D70F /* LaunchScreen.storyboard in Resources */,
+				52E103192BA2EBD600C2D70F /* Main.storyboard in Resources */,
+				52E1030B2BA2E61600C2D70F /* Config.plist in Resources */,
+				52E1030A2BA2E61600C2D70F /* ringback.wav in Resources */,
+				52E1030C2BA2E61600C2D70F /* StagingConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		778EC09D5C4434F888A57720 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MifoneSdkNative_Example/Pods-MifoneSdkNative_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MifoneSdkNative/MifoneSdkNative.framework",
+				"${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/bctoolbox-ios.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/bctoolbox-tester.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/bctoolbox.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/belcard.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/belle-sip.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/belr.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/lime.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/limetester.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/linphone.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/linphonetester.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/mediastreamer2.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/msamr.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/mscodec2.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/msopenh264.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/mssilk.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/mswebrtc.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/msx264.framework",
+				"${PODS_ROOT}/linphone-sdk/linphone-sdk/apple-darwin/Frameworks/ortp.framework",
+				"${BUILT_PRODUCTS_DIR}/linphone-sdk/linphonesw.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MifoneSdkNative.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickTableViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bctoolbox-ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bctoolbox-tester.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bctoolbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/belcard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/belle-sip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/belr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/limetester.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/linphone.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/linphonetester.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mediastreamer2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/msamr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mscodec2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/msopenh264.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mssilk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mswebrtc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/msx264.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ortp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/linphonesw.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MifoneSdkNative_Example/Pods-MifoneSdkNative_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F483C61B087DFBD15CE44638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MifoneSdkNative_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E103062BA2E61600C2D70F /* AppDelegate.swift in Sources */,
+				520664172BAC13A100F7D8C9 /* IncomingCallViewController.swift in Sources */,
+				52E103072BA2E61600C2D70F /* VoIPGRIDLogin.swift in Sources */,
+				52E103092BA2E61600C2D70F /* MicPermissionHelper.swift in Sources */,
+				52E1030D2BA2E61600C2D70F /* UrlsConfiguration.swift in Sources */,
+				52E103082BA2E61600C2D70F /* VoIPGRIDMiddleware.swift in Sources */,
+				52E103142BA2E61600C2D70F /* DialerViewController.swift in Sources */,
+				52E1030F2BA2E61600C2D70F /* InCallDialpadViewController.swift in Sources */,
+				52E103112BA2E61600C2D70F /* CallViewController.swift in Sources */,
+				52E103152BA2E61600C2D70F /* SettingsViewController.swift in Sources */,
+				520664152BABE06200F7D8C9 /* CallManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52E103012BA2E61600C2D70F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E103022BA2E61600C2D70F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4104CA607DCC34A7319C22E /* Pods-MifoneSdkNative_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MifoneSdkNative_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N23RF783F;
+				INFOPLIST_FILE = "$(SRCROOT)/MifoneSdkNative/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MifoneSdkNative;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.build.sdk.mifoneSdkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MifoneSdkNative/MifoneSdkNative_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6708D4C822645027B8127B23 /* Pods-MifoneSdkNative_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MifoneSdkNative_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N23RF783F;
+				INFOPLIST_FILE = "$(SRCROOT)/MifoneSdkNative/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MifoneSdkNative;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.build.sdk.mifoneSdkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MifoneSdkNative/MifoneSdkNative_Example-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MifoneSdkNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MifoneSdkNative_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
